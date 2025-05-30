@@ -13,8 +13,7 @@
 - 🔧 Create your own commands and scripts  
 - 🎮 Interact with X-Plane datarefs and commands  
 - 🧩 Plugin-based architecture for extendability  
-- 📝 Script execution and inline command input  
-- 📂 Load custom scripts from a folder  
+- 📝 Script execution and inline command input    
 - 🚀 Fast, sandboxed execution for in-sim safety  
 
 ---
@@ -34,16 +33,26 @@ xTerminal uses its own custom scripting language designed to be minimal, fast, a
 
 ### Example Commands
 
-print "Hello X-Plane"
-set ALT 10000
-log "Altitude set to 10,000 ft"
+CreateCommand({"ClimbTest"}, call = (
+    set(alt, 0)
+    while(alt < 3000)
+        log("Climbing... alt is ${alt}")
+        set(alt, alt + 1000)
+    endwhile
+    if(alt >= 3000)
+        log("Reached altitude.")
+    else
+        log("Still climbing...")
+    endif
+))
 
 
 ### Built-in Commands
 
 | Command   | Description                              |
 |-----------|------------------------------------------|
-| `print`   | Prints to the terminal output            |
+| `while/endwhile`   | while is a loop like always              |
+| `while`   | while is a loop like always              |
 | `log`     | Logs to X-Plane's log.txt                |
 | `set`     | Sets a dataref (e.g., `set ALT 8000`)    |
 | `run`     | Runs another script                      |
