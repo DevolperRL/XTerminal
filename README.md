@@ -52,13 +52,28 @@ CreateCommand({"ClimbTest"}, call = (
 | Command   | Description                              |
 |-----------|------------------------------------------|
 | `while/endwhile`   | while is a loop like always              |
-| `while`   | while is a loop like always              |
-| `log`     | Logs to X-Plane's log.txt                |
-| `set`     | Sets a dataref (e.g., `set ALT 8000`)    |
-| `run`     | Runs another script                      |
-| `alias`   | Creates a shortcut for a command         |
-| `if`      | Conditional execution                    |
-| `wait`    | Delays next command by milliseconds      |
+| `log`     | logs to X-Plane's log.txt and terminal              |
+| `set`     | create a variable     |
+| `get`     | get a dataref value                      |
+| `setf/sets/setsa/setfa`   | set a dataref value, each letter is the type, like f is float or s is string or a is array         |
+| `if/endif`      | conditional execution                    |
+| `wait`    | delays next command by milliseconds      |
+| `to_float`    | convert to float      |
+| `to_int`    | convert to int      |
+| `to_string`    | convert to string      |
+| `command`    | find and run once a command      |
+
+### Built-in Language Elements
+
+| Elements   | Description                              |
+|-----------|------------------------------------------|
+| `+ / * - `   | basic math              |
+| `== != <= >= < >`     | operators              |
+| `[i]`     | arrays     |
+| `${v}`     | this is used for log to get the variable value                      |
+| `__tmp`   | this is used for to_string() after converted it, you will need to do a set and put __tmp for the converted string         |
+| `args[i]`      | this is the argument someone pass on the terminal i shoud be a int number                   |
+
 
 More language documentation coming soon in the Wiki.
 
