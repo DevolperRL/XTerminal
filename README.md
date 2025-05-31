@@ -97,16 +97,9 @@ Then simply run:
 
 xTerminal/
 
-├── plugins/
+├── xTerminal/
 
-├── Scripts/ ← Your custom .or scripts
-
-├── Resources/
-
-├── LICENSE.txt
-
-└── README.md
-
+├── scripts/ ← Your custom .or scripts
 
 ---
 
@@ -114,7 +107,7 @@ xTerminal/
 
 This plugin is **free to use** for personal, non-commercial purposes.
 
-- All rights reserved © [Your Name / Brand] 2025  
+- All rights reserved © Raoul Origa 2025  
 - Redistribution, reverse-engineering, or modification is **not allowed**  
 - Provided “as is” without warranty  
 
@@ -128,28 +121,7 @@ See LICENSE.txt for full terms.
 No. It is free to use, but the source code is proprietary and not available.
 
 **Q: Can I extend xTerminal?**  
-Yes! You can write custom `.xt` scripts or use the scripting API if made available.
-
-**Q: Does it support VR?**  
-Not yet, but VR compatibility is on the roadmap.
-
----
-
-## 🤝 Support & Contact
-
-For feedback, bug reports, or suggestions, please open an Issue or contact:  
-📧 your-email@example.com  
-🌐 your-website.com
-
----
-
-## 🚧 Roadmap
-
-- [ ] Script debugger / syntax highlighter  
-- [ ] VR support  
-- [ ] Remote command execution via TCP  
-- [ ] Dataref browser  
-- [ ] Full scripting language documentation  
+Yes! You can write custom `.or` scripts or use the scripting API if made available.
 
 ---
 
