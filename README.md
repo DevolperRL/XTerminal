@@ -96,10 +96,15 @@ Then simply run:
 ## 📁 Folder Structure
 
 xTerminal/
+
 ├── plugins/
-├── Scripts/ ← Your custom .xt scripts
+
+├── Scripts/ ← Your custom .or scripts
+
 ├── Resources/
+
 ├── LICENSE.txt
+
 └── README.md
 
 
