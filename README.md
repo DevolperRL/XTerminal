@@ -6,19 +6,19 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🖥️ In-sim terminal interface  
-- 🧠 Custom lightweight command language (interpreted)  
-- 🔧 Create your own commands and scripts  
-- 🎮 Interact with X-Plane datarefs and commands  
-- 🧩 Plugin-based architecture for extendability  
-- 📝 Script execution and inline command input    
-- 🚀 Fast, sandboxed execution for in-sim safety  
+- In-sim terminal interface  
+- Custom lightweight command language (interpreted)  
+- Create your own commands and scripts  
+- Interact with X-Plane datarefs and commands  
+- Plugin-based architecture for extendability  
+- Script execution and inline command input    
+- Fast, sandboxed execution for in-sim safety  
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Download the latest release from the Releases section.
 2. Extract the `xTerminal` folder into your `X-Plane 12/Resources/plugins/` directory.
@@ -27,16 +27,20 @@
 
 ---
 
-## 🛠️ Language Overview
+##  Language Overview
 
 xTerminal uses its own custom scripting language designed to be minimal, fast, and safe.
 
 ### Example Commands
 
 CreateCommand({"ClimbTest"}, call = (
+    
     set(alt, 0)
+    
     while(alt < 3000)
+    
         log("Climbing... alt is ${alt}")
+        
         set(alt, alt + 1000)
     endwhile
     if(alt >= 3000)
@@ -107,23 +111,7 @@ CreateCommand({"ClimbTest"}, call = (
 
 More language documentation coming soon in the Wiki.
 
----
-
-## 🧪 Creating Custom Commands
-
-You can define your own commands using `alias` or by placing scripts in the `Scripts/` folder inside the plugin directory.
-
-Example:
-
-alias climb "set VS 1000; set THRUST 90"
-
-
-Then simply run:
-
-
----
-
-## 📁 Folder Structure
+## Folder Structure
 
 xTerminal/
 
@@ -133,7 +121,7 @@ xTerminal/
 
 ---
 
-## 📋 License
+## License
 
 This plugin is **free to use** for personal, non-commercial purposes.
 
@@ -145,7 +133,7 @@ See LICENSE.txt for full terms.
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Q: Is xTerminal open source?**  
 No. It is free to use, but the source code is proprietary and not available.
