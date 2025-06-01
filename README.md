@@ -33,14 +33,11 @@ xTerminal uses its own custom scripting language designed to be minimal, fast, a
 
 ### Example Commands
 
+```
 CreateCommand({"ClimbTest"}, call = (
-    
     set(alt, 0)
-    
     while(alt < 3000)
-    
         log("Climbing... alt is ${alt}")
-        
         set(alt, alt + 1000)
     endwhile
     if(alt >= 3000)
@@ -49,7 +46,7 @@ CreateCommand({"ClimbTest"}, call = (
         log("Still climbing...")
     endif
 ))
-
+```
 
 ### Built-in Commands
 
