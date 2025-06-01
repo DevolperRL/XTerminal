@@ -35,6 +35,7 @@ xTerminal uses its own custom scripting language designed to be minimal, fast, a
 
 ```
 CreateCommand({"ClimbTest"}, call = (
+    desc = "Climb to a higher altitude";
     set(alt, 0)
     while(alt < 3000)
         log("Climbing... alt is ${alt}")
