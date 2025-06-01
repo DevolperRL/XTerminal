@@ -49,19 +49,40 @@ CreateCommand({"ClimbTest"}, call = (
 
 ### Built-in Commands
 
+| Shortcut   | Description                              |
+|-----------|------------------------------------------|
+| `...`   | anything/something              |
+| `s`     | string              |
+| `n`     | name     |
+| `dtf`     | dataref                      |
+| `v`   | value         |
+| `cmd`      | command                    |
+| `i`      | int number                    |
+| `f`      | float number                    |
+| `db`      | double number                    |
+
 | Command   | Description                              |
 |-----------|------------------------------------------|
-| `while/endwhile`   | while is a loop like always              |
-| `log`     | logs to X-Plane's log.txt and terminal              |
-| `set`     | create a variable     |
-| `get`     | get a dataref value                      |
-| `setf/sets/setsa/setfa`   | set a dataref value, each letter is the type, like f is float or s is string or a is array         |
-| `if/endif`      | conditional execution                    |
-| `wait`    | delays next command by milliseconds      |
-| `to_float`    | convert to float      |
-| `to_int`    | convert to int      |
-| `to_string`    | convert to string      |
-| `command`    | find and run once a command      |
+| `while(...)/endwhile`   | while is a loop like always              |
+| `log(s)`     | logs to X-Plane's log.txt and terminal              |
+| `set(n, v)`     | create a variable     |
+| `get(n, dtf)`     | get a dataref value                      |
+| `setf(dtf, v)/sets(dtf, v)/setsa(dtf, v)/setfa(dtf, v)`   | set a dataref value, each letter is the type, like f is float or s is string or a is array         |
+| `if(...)/endif`      | conditional execution                    |
+| `wait(n)`    | delays next command by milliseconds      |
+| `to_float(v)`    | convert to float      |
+| `to_int(v)`    | convert to int      |
+| `to_string(v)`    | convert to string      |
+| `command(cmd)`    | find and run once a command      |
+| `reloadScenery()`    | reload scenery      |
+| `reloadPlugins()`    | reload plugins      |
+| `getMagneticVariation(db lat, db lon)`    | get the magnetic variantion      |
+| `degTrueToDegMagnetic(f hdg)`    | deg to deg magnetic      |
+| `degMagneticToDegTrue(f hdg)`    | deg magnetic to deg      |
+| `setUsersAircraft(s path)`    | change the plane of the user      |
+| `placeUserAtAirport(s icao)`    | change the airport of the user      |
+| `placeUserAtLocation(db lat, db lon, f MSL, f hdg, f speed)`    | place the user at location      |
+| `findFirstNavAid(n)`    | place the user at location      |
 
 ### Built-in Language Elements
 
