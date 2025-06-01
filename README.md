@@ -60,6 +60,7 @@ CreateCommand({"ClimbTest"}, call = (
 | `i`      | int number                    |
 | `f`      | float number                    |
 | `db`      | double number                    |
+| `str`      | string                    |
 
 | Command   | Description                              |
 |-----------|------------------------------------------|
@@ -82,7 +83,11 @@ CreateCommand({"ClimbTest"}, call = (
 | `setUsersAircraft(s path)`    | change the plane of the user      |
 | `placeUserAtAirport(s icao)`    | change the airport of the user      |
 | `placeUserAtLocation(db lat, db lon, f MSL, f hdg, f speed)`    | place the user at location      |
-| `findFirstNavAid(n)`    | place the user at location      |
+| `findFirstNavAid(n)`    | get the first nav aid      |
+| `findLastNavAidOfType(n)`    | get the last nav aid of type       |
+| `findNavAid(n, str frag, i frag, db lat, db lon, i freq, i type)`    | here you get the navref      |
+| `getNavAidInfo(n, f navref)`    | get the last nav aid and put it inside a array variable. To get string you will need to use _id and _name      |
+| `getGPSDestination(n)`    | get navref   |
 
 ### Built-in Language Elements
 
@@ -94,6 +99,7 @@ CreateCommand({"ClimbTest"}, call = (
 | `${v}`     | this is used for log to get the variable value                      |
 | `__tmp`   | this is used for to_string() after converted it, you will need to do a set and put __tmp for the converted string         |
 | `args[i]`      | this is the argument someone pass on the terminal i shoud be a int number                   |
+| `path`      | get the xplane path                   |
 
 
 More language documentation coming soon in the Wiki.
