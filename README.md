@@ -88,6 +88,9 @@ CreateCommand({"ClimbTest"}, call = (
 | `findNavAid(n, str frag, i frag, db lat, db lon, i freq, i type)`    | here you get the navref      |
 | `getNavAidInfo(n, f navref)`    | get the last nav aid and put it inside a array variable. To get string you will need to use _id and _name      |
 | `getGPSDestination(n)`    | get navref   |
+| `getPluginCount(n)`    | get the plugins in int   |
+| `getPluginInfo(index, prefix)` | retrieves plugin info by index and stores _name, _file, _signature, _description, and _id in variables with the given prefix. |
+| `findPluginBySignature(varName, signature)` | finds the plugin ID with the given signature and stores it in the specified variable. |
 
 ### Built-in Language Elements
 
