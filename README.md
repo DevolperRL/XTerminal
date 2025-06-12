@@ -80,9 +80,9 @@ CreateCommand({"ClimbTest"}, call = (
 | `reloadScenery()`    | reload scenery      |
 | `reloadPlugins()`    | reload plugins      |
 | `getMagneticVariation(db lat, db lon)`    | get the magnetic variantion      |
-| `degTrueToDegMagnetic(f hdg)`    | deg to deg magnetic      |
-| `degMagneticToDegTrue(f hdg)`    | deg magnetic to deg      |
-| `setUsersAircraft(s path)`    | change the plane of the user      |
+| `degTrueToDegMagnetic(n, f hdg)`    | deg to deg magnetic      |
+| `degMagneticToDegTrue(n, f hdg)`    | deg magnetic to deg      |
+| `setUsersAircraft(path, s path)`    | use has first argument always path, change the plane of the user      |
 | `placeUserAtAirport(s icao)`    | change the airport of the user      |
 | `placeUserAtLocation(db lat, db lon, f MSL, f hdg, f speed)`    | place the user at location      |
 | `findFirstNavAid(n)`    | get the first nav aid      |
